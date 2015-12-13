@@ -7,6 +7,12 @@
 import Foundation
 import UIKit
 
+/*
+
+    Algorithm taken from Tanner Helland's post: http://www.tannerhelland.com/4435/convert-temperature-rgb-algorithm-code/#comment-26088
+
+*/
+
 extension UIColor
 {
     func colorWithColorTemperature(kelvin : CGFloat) -> UIColor
