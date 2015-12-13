@@ -1,6 +1,4 @@
-//
-//  ColorTemperatureToRGB.swift
-//  Nice Light
+
 //
 //  Created by David Fearon on 13/12/2015.
 //  Copyright © 2015 David Fearon. All rights reserved.
