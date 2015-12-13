@@ -14,6 +14,7 @@
 		8C259B611C1DD79D009026E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C259B5F1C1DD79D009026E4 /* LaunchScreen.storyboard */; };
 		8C259B6C1C1DD79E009026E4 /* Nice_LightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C259B6B1C1DD79E009026E4 /* Nice_LightTests.swift */; };
 		8C259B771C1DD79E009026E4 /* Nice_LightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C259B761C1DD79E009026E4 /* Nice_LightUITests.swift */; };
+		8C259B8A1C1DE9DF009026E4 /* ColorTemperatureToRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C259B891C1DE9DF009026E4 /* ColorTemperatureToRGB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8C259B721C1DD79E009026E4 /* Nice LightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nice LightUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C259B761C1DD79E009026E4 /* Nice_LightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nice_LightUITests.swift; sourceTree = "<group>"; };
 		8C259B781C1DD79E009026E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C259B891C1DE9DF009026E4 /* ColorTemperatureToRGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTemperatureToRGB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				8C259B561C1DD79D009026E4 /* AppDelegate.swift */,
 				8C259B581C1DD79D009026E4 /* ViewController.swift */,
 				8C259B5A1C1DD79D009026E4 /* Main.storyboard */,
+				8C259B891C1DE9DF009026E4 /* ColorTemperatureToRGB.swift */,
 				8C259B5D1C1DD79D009026E4 /* Assets.xcassets */,
 				8C259B5F1C1DD79D009026E4 /* LaunchScreen.storyboard */,
 				8C259B621C1DD79D009026E4 /* Info.plist */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C259B591C1DD79D009026E4 /* ViewController.swift in Sources */,
+				8C259B8A1C1DE9DF009026E4 /* ColorTemperatureToRGB.swift in Sources */,
 				8C259B571C1DD79D009026E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,10 +401,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Nice Light/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.davidfearon.Nice-Light";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -408,10 +415,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Nice Light/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.davidfearon.Nice-Light";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
