@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Nice Light.xcodeproj">
+      location = "self:/Users/davidfearon/Documents/ColorTempToRGB/Sample Project.xcodeproj">
    </FileRef>
 </Workspace>
