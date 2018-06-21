@@ -27,8 +27,6 @@ extension UIColor
         
         blue =  clamp(value: percentKelvin >= 66 ? 255 : (percentKelvin <= 19 ? 0 : 138.5177312231 * log(percentKelvin - 10) - 305.0447927307));
 
-        print("RGB for color temp of \(kelvin): R\(red) G\(green) B\(blue)")
-
         return UIColor(red: red / 255, green: green / 255, blue: blue / 255, alpha: 1)
     }
     
