@@ -27,10 +27,10 @@ class ViewController: UIViewController
         let temp3 : CGFloat = 6000;
         let temp4 : CGFloat = 6600;
         
-        box1.backgroundColor = UIColor().colorWithColorTemperature(temp1)
-        box2.backgroundColor = UIColor().colorWithColorTemperature(temp2)
-        box3.backgroundColor = UIColor().colorWithColorTemperature(temp3)
-        box4.backgroundColor = UIColor().colorWithColorTemperature(temp4)
+        box1.backgroundColor = UIColor().colorWithColorTemperature(kelvin: temp1)
+        box2.backgroundColor = UIColor().colorWithColorTemperature(kelvin: temp2)
+        box3.backgroundColor = UIColor().colorWithColorTemperature(kelvin: temp3)
+        box4.backgroundColor = UIColor().colorWithColorTemperature(kelvin: temp4)
         
         label1.text = "\(temp1)K"
         label2.text = "\(temp2)K"
