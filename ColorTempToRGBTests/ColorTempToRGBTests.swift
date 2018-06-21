@@ -10,7 +10,7 @@ import XCTest
 
 class ColorTempToRGBTests: XCTestCase
 {
-    func testColorTemperatureOver6600KelvinProducesMaxRGBValues()
+    func testWhitePointColorTemperatureProducesMaxRGBValues()
     {
         let color6600K = UIColor(temperature:6600)
         
