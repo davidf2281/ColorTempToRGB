@@ -32,10 +32,10 @@ class ViewController: UIViewController
         box3.backgroundColor = UIColor(temperature: temp3)
         box4.backgroundColor = UIColor(temperature: temp4)
         
-        label1.text = "\(temp1)K"
-        label2.text = "\(temp2)K"
-        label3.text = "\(temp3)K"
-        label4.text = "\(temp4)K"
+        label1.text = "\(Int(temp1))K"
+        label2.text = "\(Int(temp2))K"
+        label3.text = "\(Int(temp3))K"
+        label4.text = "\(Int(temp4))K"
     }
 }
 
