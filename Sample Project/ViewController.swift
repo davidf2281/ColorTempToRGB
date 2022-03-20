@@ -22,10 +22,10 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         
-        let temp1 : CGFloat = 2700;
-        let temp2 : CGFloat = 4000;
-        let temp3 : CGFloat = 6000;
-        let temp4 : CGFloat = 6600;
+        let temp1: CGFloat = 2700;
+        let temp2: CGFloat = 4000;
+        let temp3: CGFloat = 6000;
+        let temp4: CGFloat = 6600;
         
         box1.backgroundColor = UIColor(temperature: temp1)
         box2.backgroundColor = UIColor(temperature: temp2)
