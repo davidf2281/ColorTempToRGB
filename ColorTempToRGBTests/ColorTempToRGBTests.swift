@@ -14,7 +14,7 @@ class ColorTempToRGBTests: XCTestCase
     {
         let color6600K = UIColor(temperature:6600)
         
-        var red:CGFloat = 0, green:CGFloat = 0, blue:CGFloat = 0, alpha:CGFloat = 0
+        var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha:CGFloat = 0
         
         color6600K.getRed(&red, green:&green,  blue: &blue, alpha: &alpha)
         
