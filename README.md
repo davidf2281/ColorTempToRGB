@@ -5,8 +5,10 @@ You'll find the algorithm and new initializers for UIKit's `UIColor` and SwiftUI
 
 ## Usage
 
-For a UIKit `UIColor`:
+For a UIKit:
+
 `let warmWhiteColor = UIColor(temperature: 2700)`
 
-For a SwiftUI `Color`:
+For a SwiftUI:
+
 `let warmWhiteColor = Color(temperature: 2700)`
