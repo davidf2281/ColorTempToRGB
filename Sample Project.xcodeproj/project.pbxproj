@@ -3,18 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8C1EBF9E20DC01B500BC49AD /* ColorTempToRGBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1EBF9D20DC01B500BC49AD /* ColorTempToRGBTests.swift */; };
-		8C1EBFA020DC076900BC49AD /* UIColor+Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C259B891C1DE9DF009026E4 /* UIColor+Temperature.swift */; };
+		8C1EBFA020DC076900BC49AD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C259B891C1DE9DF009026E4 /* Extensions.swift */; };
 		8C259B571C1DD79D009026E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C259B561C1DD79D009026E4 /* AppDelegate.swift */; };
 		8C259B591C1DD79D009026E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C259B581C1DD79D009026E4 /* ViewController.swift */; };
 		8C259B5C1C1DD79D009026E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C259B5A1C1DD79D009026E4 /* Main.storyboard */; };
 		8C259B5E1C1DD79D009026E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C259B5D1C1DD79D009026E4 /* Assets.xcassets */; };
 		8C259B611C1DD79D009026E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C259B5F1C1DD79D009026E4 /* LaunchScreen.storyboard */; };
-		8C259B8A1C1DE9DF009026E4 /* UIColor+Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C259B891C1DE9DF009026E4 /* UIColor+Temperature.swift */; };
+		8C259B8A1C1DE9DF009026E4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C259B891C1DE9DF009026E4 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 		8C259B5D1C1DD79D009026E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C259B601C1DD79D009026E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C259B621C1DD79D009026E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C259B891C1DE9DF009026E4 /* UIColor+Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Temperature.swift"; sourceTree = "<group>"; };
+		8C259B891C1DE9DF009026E4 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,13 +89,13 @@
 		8C259B551C1DD79D009026E4 /* Sample Project */ = {
 			isa = PBXGroup;
 			children = (
+				8C259B621C1DD79D009026E4 /* Info.plist */,
 				8C259B561C1DD79D009026E4 /* AppDelegate.swift */,
+				8C259B891C1DE9DF009026E4 /* Extensions.swift */,
 				8C259B581C1DD79D009026E4 /* ViewController.swift */,
-				8C259B5A1C1DD79D009026E4 /* Main.storyboard */,
-				8C259B891C1DE9DF009026E4 /* UIColor+Temperature.swift */,
 				8C259B5D1C1DD79D009026E4 /* Assets.xcassets */,
 				8C259B5F1C1DD79D009026E4 /* LaunchScreen.storyboard */,
-				8C259B621C1DD79D009026E4 /* Info.plist */,
+				8C259B5A1C1DD79D009026E4 /* Main.storyboard */,
 			);
 			path = "Sample Project";
 			sourceTree = "<group>";
@@ -144,8 +144,9 @@
 		8C259B4B1C1DD79D009026E4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "David Fearon";
 				TargetAttributes = {
 					8C1EBF9120DC011800BC49AD = {
@@ -205,7 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C1EBF9E20DC01B500BC49AD /* ColorTempToRGBTests.swift in Sources */,
-				8C1EBFA020DC076900BC49AD /* UIColor+Temperature.swift in Sources */,
+				8C1EBFA020DC076900BC49AD /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C259B591C1DD79D009026E4 /* ViewController.swift in Sources */,
-				8C259B8A1C1DE9DF009026E4 /* UIColor+Temperature.swift in Sources */,
+				8C259B8A1C1DE9DF009026E4 /* Extensions.swift in Sources */,
 				8C259B571C1DD79D009026E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,8 +265,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = ColorTempToRGBTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "n-a.ColorTempToRGBTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -293,8 +298,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = ColorTempToRGBTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "n-a.ColorTempToRGBTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -354,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -405,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -421,7 +430,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UE24L5QUH7;
 				INFOPLIST_FILE = "Sample project/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.davidfearon.Sample-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -437,7 +449,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UE24L5QUH7;
 				INFOPLIST_FILE = "Sample project/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.davidfearon.Sample-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";

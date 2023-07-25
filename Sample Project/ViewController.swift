@@ -38,4 +38,3 @@ class ViewController: UIViewController
         label4.text = "\(Int(temp4))K"
     }
 }
-
