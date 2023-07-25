@@ -12,3 +12,5 @@ For UIKit:
 For SwiftUI:
 
 `let warmWhiteColor = Color(temperature: 2700)`
+
+If you're only using one of the extensions you'll probably want to move `componentsForColorTemperature(temperature:)` into the one you're using and mark it `private`.
